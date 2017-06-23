@@ -1,0 +1,31 @@
+<a href="#/" id="back-button" class="btn btn-warning">
+  Back
+</a>
+
+<search_form></search_form>
+
+<div id="repo_info" ng-repeat="repo in vm.repos" ng-click="vm.drillDownToIssues(repo.owner.login, repo.name)">
+  <div class="row">
+    <div class="col-xs-4">
+      <h4>
+        {{repo.full_name}}
+      </h4>
+    </div>
+    <div class="col-xs-2">
+      
+    </div>
+    <div class="col-xs-4">
+      <h4>
+        {{repo.description}}
+      </h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <h4 class="text-muted">
+        {{repo.stargazers_count}} stars
+      </h4>
+    </div>
+  </div>
+</div>
