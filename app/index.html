@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>Github Search</title>
+    <!--Bootstrap latest compiled and minified CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--Optional theme-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <ng-view></ng-view>
+  
+    <!--Third-party JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.0/angular-route.js"></script>
+  
+    <!--main app module-->
+    <script src="/app.module.js"></script>
+  
+    <!--landing module-->
+    <script src="/landing/landing.module.js"></script>
+    <script src="/landing/config.route.js"></script>
+  
+    <!--landing module-->
+    <script src="/issues/issues.module.js"></script>
+    <script src="/issues/config.route.js"></script>
+    <script src="/issues/issues.controller.js"></script>
+  
+    <!--core module-->
+    <script src="/core/core.module.js"></script>
+    <script src="/core/repo.service.js"></script>
+    <script src="/core/directives/form/form.js"></script>
+  
+    <!--repos module-->
+    <script src="/repos/repos.module.js"></script>
+    <script src="/repos/config.route.js"></script>
+    <script src="/repos/repos.controller.js"></script>
+   
+
+</body>
+</html>

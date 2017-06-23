@@ -1,0 +1,20 @@
+<a href="#/repos" id="back-button" class="btn btn-warning">
+  Back
+</a>
+
+<div class="container-fluid">
+  <div class="text-center">
+    <h2>
+      {{vm.repoName}}
+    </h2>
+  </div>
+  <div class="text-center">
+    <h3>
+      {{vm.authorName}}
+    </h3>
+  </div>
+         
+  <ul class="list-group"> <!---https://docs.angularjs.org/error/ngModel/nonassign?p0=issue.state%20%3D%3D%20%27closed%27%3F%20true%20, therefore you cannot use Ternary operator for ng-model value -->
+    <li class="list-group-item" ng-repeat="issue in vm.issues"><input ng-model="issue.state" type="checkbox"> {{issue.title}}</li>   <!--when the issue.state is true, that checkbox will be checked -->
+  </ul>
+</div>

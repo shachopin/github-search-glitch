@@ -1,0 +1,13 @@
+<div class="container-fluid"> <!-- this form is on all pages -->
+  <form ng-submit="vm.searchRepos()">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3 form-group">
+        <label for="searchRepo">Github Repositories Search</label>
+        <input type="text" class="form-control" id="searchRepo" placeholder="Search Bar" ng-model="vm.searchReposText" required> 
+      </div>
+    </div>
+    <div class="text-center">
+      <button id="search_button" class="btn btn-success">Search</button>
+    </div>
+  </form>   
+</div>

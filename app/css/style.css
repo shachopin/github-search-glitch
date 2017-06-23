@@ -1,0 +1,28 @@
+body {
+  margin-top:20px;
+}
+
+#repo_info {
+  margin-top: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 2px solid black;
+  padding-left:5px;
+  cursor:pointer;
+}
+
+#search_button {
+  margin-bottom: 10px;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.list-group {
+  box-shadow: none;
+}
+
+#back-button {
+  margin-left: 2%;
+}
